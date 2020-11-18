@@ -1,0 +1,16 @@
+{
+    "augmentation": true,
+    "batch_size": 256,
+    "train_ratio": 0.8,
+    "Optim": {
+        "lr": 0.01,
+        "beta1": 0.9,
+        "beta2": 0.999,
+        "eps": 1e-08,
+        "weight_decay": 0,
+        "amsgrad": true
+    },
+    "Scheduler": {
+        "T_max": 100
+    }
+}
