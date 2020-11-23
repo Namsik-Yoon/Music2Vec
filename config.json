@@ -1,16 +1,28 @@
 {
     "augmentation": true,
-    "batch_size": 256,
+    "batch_size": 32,
     "train_ratio": 0.8,
+    "length": 1024,
+    "model": "resnet101",
+    "embedding_vector": 512,
     "Optim": {
-        "lr": 0.01,
+        "lr": 0.001,
         "beta1": 0.9,
         "beta2": 0.999,
         "eps": 1e-08,
-        "weight_decay": 0,
+        "weight_decay": 0.001,
         "amsgrad": true
     },
     "Scheduler": {
-        "T_max": 100
+        "T_max": 200
+    },
+    "DataSet": {
+        "frame_length" : 0.25,
+        "frame_stride" : 0.05,
+        "n_mels" : 128,
+        "noise_factor" : 0.2,
+        "shift_max" : 10, 
+        "mask_ratio" : 0.1, 
+        "pitch_factor" : 5
     }
 }

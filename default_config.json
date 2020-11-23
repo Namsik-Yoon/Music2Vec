@@ -1,0 +1,1 @@
+{'augmentation': True, 'batch_size': 50, 'train_ratio': 0.8, 'length': 1024, 'Optim': {'lr': 0.01, 'beta1': 0.9, 'beta2': 0.999, 'eps': 1e-08, 'weight_decay': 0, 'amsgrad': True}, 'Scheduler': {'T_max': 100}, 'DataSet': {'frame_length': 0.25, 'frame_stride': 0.05, 'n_mels': 128, 'noise_factor': 0.2, 'shift_max': 10, 'mask_ratio': 0.1, 'pitch_factor': 5}}
